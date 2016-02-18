@@ -13,5 +13,8 @@ http://caneda.github.io
 
 License
 =======
+Unless otherwise stated, the works in this repository are released as CC0 public domain. You can copy, modify, distribute and perform the work, even for commercial purposes, all without asking permission.
 
-All examples in this repository are public domain, so you can use/modify/copy them at your will.
+To the extent possible under law, the author(s) have dedicated all copyright and related and neighboring rights to this software to the public domain worldwide. This software is distributed without any warranty.
+
+For more information, see the included LICENSE file.
