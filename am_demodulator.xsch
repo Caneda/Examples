@@ -1,0 +1,85 @@
+<?xml version="1.0"?>
+<!DOCTYPE caneda>
+<caneda version="0.1.0">
+    <components>
+        <component name="Resistor" library="Passive" pos="450,170" transform="0,-1,1,0,0,0">
+            <properties pos="20,20">
+                <property name="R" value="1k" visible="true"/>
+                <property name="dtemp" value="1.0" visible="false"/>
+                <property name="label" value="R1" visible="true"/>
+                <property name="m" value="1.0" visible="false"/>
+                <property name="noisy" value="0" visible="false"/>
+                <property name="scale" value="1.0" visible="false"/>
+                <property name="tc1" value="0.0" visible="false"/>
+                <property name="tc2" value="0.0" visible="false"/>
+                <property name="temp" value="26.5" visible="false"/>
+            </properties>
+        </component>
+        <component name="Voltage Source Amplitude Modulated (AM)" library="Sources" pos="210,170" transform="1,0,0,1,0,0">
+            <properties pos="-100,-30">
+                <property name="Va" value="10" visible="true"/>
+                <property name="Voff" value="0" visible="false"/>
+                <property name="fc" value="50k" visible="true"/>
+                <property name="label" value="V1" visible="true"/>
+                <property name="mf" value="1k" visible="true"/>
+                <property name="td" value="0" visible="false"/>
+            </properties>
+        </component>
+        <component name="Capacitor" library="Passive" pos="380,170" transform="0,-1,1,0,0,0">
+            <properties pos="20,-70">
+                <property name="C" value="0.1u" visible="true"/>
+                <property name="dtemp" value="1.0" visible="false"/>
+                <property name="ic" value="0" visible="false"/>
+                <property name="label" value="C1" visible="true"/>
+                <property name="m" value="1.0" visible="false"/>
+                <property name="model" value="C" visible="false"/>
+                <property name="scale" value="1.0" visible="false"/>
+                <property name="tc1" value="0.0" visible="false"/>
+                <property name="tc2" value="0.0" visible="false"/>
+                <property name="temp" value="26.5" visible="false"/>
+            </properties>
+        </component>
+        <component name="Transient Simulation" library="Simulations" pos="570,140" transform="1,0,0,1,0,0">
+            <properties pos="-21,21">
+                <property name="label" value="Sim1" visible="true"/>
+                <property name="tmax" value="" visible="false"/>
+                <property name="tstart" value="0" visible="false"/>
+                <property name="tstep" value="1u" visible="true"/>
+                <property name="tstop" value="2m" visible="true"/>
+                <property name="uic" value="" visible="false"/>
+            </properties>
+        </component>
+        <component name="Diode" library="Semiconductor" pos="310,90" transform="1,0,0,1,0,0">
+            <properties pos="-10,-30">
+                <property name="area" value="1.0" visible="false"/>
+                <property name="dtemp" value="1.0" visible="false"/>
+                <property name="ic" value="0" visible="false"/>
+                <property name="label" value="D1" visible="true"/>
+                <property name="m" value="1.0" visible="false"/>
+                <property name="model" value="D" visible="false"/>
+                <property name="off" value="" visible="false"/>
+                <property name="pj" value="1.0" visible="false"/>
+                <property name="temp" value="26.5" visible="false"/>
+            </properties>
+        </component>
+    </components>
+    <ports>
+        <port name="out" pos="450,90"/>
+        <port name="in" pos="210,90"/>
+        <port name="gnd" pos="310,250"/>
+    </ports>
+    <wires>
+        <wire start="450,190" end="450,250"/>
+        <wire start="380,90" end="450,90"/>
+        <wire start="450,250" end="380,250"/>
+        <wire start="380,190" end="380,250"/>
+        <wire start="380,250" end="310,250"/>
+        <wire start="310,250" end="210,250"/>
+        <wire start="210,250" end="210,200"/>
+        <wire start="450,150" end="450,90"/>
+        <wire start="380,90" end="380,150"/>
+        <wire start="330,90" end="380,90"/>
+        <wire start="210,90" end="290,90"/>
+        <wire start="210,140" end="210,90"/>
+    </wires>
+</caneda>
