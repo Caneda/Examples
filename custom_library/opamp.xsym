@@ -1,0 +1,69 @@
+<?xml version="1.0"?>
+<!DOCTYPE caneda>
+<component name="opamp" version="0.1.0" label="X">
+    <displaytext>
+        <lang lang="C">User created component</lang>
+    </displaytext>
+    <description>
+        <lang lang="C">User created component based on user symbol</lang>
+    </description>
+    <symbol>
+        <painting name="line" line="0,0,5,0" pos="-17,10" transform="1,0,0,1,0,0">
+            <pen width="1" color="#808080" style="1"/>
+        </painting>
+        <painting name="line" line="0,0,0,-5" pos="-14.5,-7.5" transform="1,0,0,1,0,0">
+            <pen width="1" color="#808080" style="1"/>
+        </painting>
+        <painting name="line" line="0,0,5,0" pos="-17,-10" transform="1,0,0,1,0,0">
+            <pen width="1" color="#808080" style="1"/>
+        </painting>
+        <painting name="line" line="0,0,-40,-20" pos="20,0" transform="1,0,0,1,0,0">
+            <pen width="1" color="#808080" style="1"/>
+        </painting>
+        <painting name="line" line="0,0,40,-20" pos="-20,20" transform="1,0,0,1,0,0">
+            <pen width="1" color="#808080" style="1"/>
+        </painting>
+        <painting name="line" line="0,0,0,40" pos="-20,-20" transform="1,0,0,1,0,0">
+            <pen width="1" color="#808080" style="1"/>
+        </painting>
+        <painting name="line" line="0,0,10,0" pos="20,0" transform="1,0,0,1,0,0">
+            <pen width="1" color="#808080" style="1"/>
+        </painting>
+        <painting name="line" line="0,0,10,0" pos="-30,-10" transform="1,0,0,1,0,0">
+            <pen width="1" color="#808080" style="1"/>
+        </painting>
+        <painting name="line" line="0,0,10,0" pos="-30,10" transform="1,0,0,1,0,0">
+            <pen width="1" color="#808080" style="1"/>
+        </painting>
+    </symbol>
+    <ports>
+        <port name="out" pos="30,0"/>
+        <port name="in-" pos="-30,10"/>
+        <port name="in+" pos="-30,-10"/>
+    </ports>
+    <properties pos="-20,-50">
+        <property name="Av" default="100k" unit="-" visible="true">
+            <description>
+                <lang lang="C">Voltage gain</lang>
+            </description>
+        </property>
+        <property name="GBW" default="10Meg" unit="-" visible="false">
+            <description>
+                <lang lang="C">Gain-bandwith product</lang>
+            </description>
+        </property>
+        <property name="Rin" default="100Meg" unit="-" visible="false">
+            <description>
+                <lang lang="C">Input impedance</lang>
+            </description>
+        </property>
+        <property name="Rout" default="0" unit="-" visible="false">
+            <description>
+                <lang lang="C">Output impedance</lang>
+            </description>
+        </property>
+    </properties>
+    <models>
+        <model type="spice" syntax="X%label %port{out} %port{in-} %port{in+} opamp Av=%property{Av} GBW=%property{GBW} Rin=%property{Rin} Rout=%property{Rout} %subcircuit{opamp out in- in+ Av=0 GBW=0 Rin=0 Rout=0 %n.include %librarypath/opamp.net} %generateNetlist"/>
+    </models>
+</component>

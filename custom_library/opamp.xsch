@@ -1,0 +1,99 @@
+<?xml version="1.0"?>
+<!DOCTYPE caneda>
+<caneda version="0.1.0">
+    <components>
+        <component name="Linear Voltage-Controlled Voltage Source (VCVS)" library="Sources" pos="420,60" transform="1,0,0,1,0,0">
+            <properties pos="-30,-60">
+                <property name="G" value="1.0" visible="true"/>
+                <property name="label" value="Eout" visible="true"/>
+            </properties>
+        </component>
+        <component name="Linear Voltage-Controlled Voltage Source (VCVS)" library="Sources" pos="130,60" transform="1,0,0,1,0,0">
+            <properties pos="-30,-60">
+                <property name="G" value="{Av}" visible="true"/>
+                <property name="label" value="Eg" visible="true"/>
+            </properties>
+        </component>
+        <component name="Capacitor" library="Passive" pos="280,90" transform="0,1,-1,0,0,0">
+            <properties pos="10,70">
+                <property name="C" value="{Av/(2*3.14159*10k*GBW)}" visible="true"/>
+                <property name="dtemp" value="1.0" visible="false"/>
+                <property name="ic" value="0" visible="false"/>
+                <property name="label" value="Cp" visible="true"/>
+                <property name="m" value="1.0" visible="false"/>
+                <property name="model" value="C" visible="false"/>
+                <property name="scale" value="1.0" visible="false"/>
+                <property name="tc1" value="0.0" visible="false"/>
+                <property name="tc2" value="0.0" visible="false"/>
+                <property name="temp" value="26.5" visible="false"/>
+            </properties>
+        </component>
+        <component name="Resistor" library="Passive" pos="550,40" transform="1,0,0,1,0,0">
+            <properties pos="-30,-40">
+                <property name="R" value="{Rout}" visible="true"/>
+                <property name="dtemp" value="1.0" visible="false"/>
+                <property name="label" value="Rout" visible="true"/>
+                <property name="m" value="1.0" visible="false"/>
+                <property name="noisy" value="0" visible="false"/>
+                <property name="scale" value="1.0" visible="false"/>
+                <property name="tc1" value="0.0" visible="false"/>
+                <property name="tc2" value="0.0" visible="false"/>
+                <property name="temp" value="26.5" visible="false"/>
+            </properties>
+        </component>
+        <component name="Resistor" library="Passive" pos="230,40" transform="1,0,0,1,0,0">
+            <properties pos="-20,-40">
+                <property name="R" value="10k" visible="true"/>
+                <property name="dtemp" value="1.0" visible="false"/>
+                <property name="label" value="Rp" visible="true"/>
+                <property name="m" value="1.0" visible="false"/>
+                <property name="noisy" value="0" visible="false"/>
+                <property name="scale" value="1.0" visible="false"/>
+                <property name="tc1" value="0.0" visible="false"/>
+                <property name="tc2" value="0.0" visible="false"/>
+                <property name="temp" value="26.5" visible="false"/>
+            </properties>
+        </component>
+        <component name="Resistor" library="Passive" pos="40,100" transform="0,-1,1,0,0,0">
+            <properties pos="10,-70">
+                <property name="R" value="{Rin}" visible="true"/>
+                <property name="dtemp" value="1.0" visible="false"/>
+                <property name="label" value="Rin" visible="true"/>
+                <property name="m" value="1.0" visible="false"/>
+                <property name="noisy" value="0" visible="false"/>
+                <property name="scale" value="1.0" visible="false"/>
+                <property name="tc1" value="0.0" visible="false"/>
+                <property name="tc2" value="0.0" visible="false"/>
+                <property name="temp" value="26.5" visible="false"/>
+            </properties>
+        </component>
+    </components>
+    <ports>
+        <port name="Ground" pos="480,160"/>
+        <port name="Ground" pos="410,160"/>
+        <port name="Ground" pos="280,160"/>
+        <port name="Ground" pos="190,160"/>
+        <port name="out" pos="630,40"/>
+        <port name="in-" pos="0,160"/>
+        <port name="in+" pos="0,40"/>
+    </ports>
+    <wires>
+        <wire start="190,80" end="190,160"/>
+        <wire start="410,160" end="410,80"/>
+        <wire start="480,80" end="480,160"/>
+        <wire start="570,40" end="630,40"/>
+        <wire start="530,40" end="480,40"/>
+        <wire start="280,40" end="410,40"/>
+        <wire start="120,160" end="40,160"/>
+        <wire start="120,80" end="120,160"/>
+        <wire start="120,40" end="40,40"/>
+        <wire start="190,40" end="210,40"/>
+        <wire start="280,110" end="280,160"/>
+        <wire start="280,40" end="280,70"/>
+        <wire start="250,40" end="280,40"/>
+        <wire start="40,160" end="40,120"/>
+        <wire start="0,160" end="40,160"/>
+        <wire start="40,40" end="40,80"/>
+        <wire start="0,40" end="40,40"/>
+    </wires>
+</caneda>
