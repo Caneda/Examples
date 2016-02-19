@@ -1,0 +1,82 @@
+<?xml version="1.0"?>
+<!DOCTYPE caneda>
+<caneda version="0.1.0">
+    <components>
+        <component name="DC Transfer Function" library="Simulations" pos="410,50" transform="1,0,0,1,0,0">
+            <properties pos="-21,21">
+                <property name="increment" value="0.1" visible="false"/>
+                <property name="increment2" value="0.25" visible="false"/>
+                <property name="label" value="Sim2" visible="true"/>
+                <property name="source" value="VV2" visible="true"/>
+                <property name="source2" value="VV1" visible="true"/>
+                <property name="start" value="0" visible="true"/>
+                <property name="start2" value="0" visible="true"/>
+                <property name="stop" value="15" visible="true"/>
+                <property name="stop2" value="5" visible="true"/>
+            </properties>
+        </component>
+        <component name="Ammeter" library="Miscellaneous" pos="150,30" transform="0,-1,1,0,0,0">
+            <properties pos="40,-20">
+                <property name="label" value="Amp1" visible="true"/>
+            </properties>
+        </component>
+        <component name="NMOS Transistor" library="Semiconductor" pos="290,110" transform="1,0,0,1,0,0">
+            <properties pos="-14,14">
+                <property name="ad" value="0.0" visible="false"/>
+                <property name="as" value="0.0" visible="false"/>
+                <property name="ic_vbs" value="0" visible="false"/>
+                <property name="ic_vds" value="0" visible="false"/>
+                <property name="ic_vgs" value="0" visible="false"/>
+                <property name="l" value="100u" visible="false"/>
+                <property name="label" value="M1" visible="true"/>
+                <property name="m" value="1.0" visible="false"/>
+                <property name="model" value="NMOS" visible="false"/>
+                <property name="nrd" value="1.0" visible="false"/>
+                <property name="nrs" value="1.0" visible="false"/>
+                <property name="off" value="" visible="false"/>
+                <property name="pd" value="0.0" visible="false"/>
+                <property name="ps" value="0.0" visible="false"/>
+                <property name="temp" value="26.5" visible="false"/>
+                <property name="w" value="100u" visible="false"/>
+            </properties>
+        </component>
+        <component name="Voltage Source Sinusoidal" library="Sources" pos="30,170" transform="1,0,0,1,0,0">
+            <properties pos="-100,-20">
+                <property name="Va" value="5" visible="true"/>
+                <property name="Voff" value="0" visible="false"/>
+                <property name="freq" value="1k" visible="true"/>
+                <property name="label" value="V2" visible="true"/>
+                <property name="td" value="0.0" visible="false"/>
+                <property name="theta" value="0.0" visible="false"/>
+            </properties>
+        </component>
+        <component name="Voltage Source Sinusoidal" library="Sources" pos="180,170" transform="1,0,0,1,0,0">
+            <properties pos="-90,-20">
+                <property name="Va" value="5" visible="true"/>
+                <property name="Voff" value="0" visible="false"/>
+                <property name="freq" value="1k" visible="true"/>
+                <property name="label" value="V1" visible="true"/>
+                <property name="td" value="0.0" visible="false"/>
+                <property name="theta" value="0.0" visible="false"/>
+            </properties>
+        </component>
+    </components>
+    <ports>
+        <port name="Vgs" pos="180,110"/>
+        <port name="Vds" pos="300,30"/>
+        <port name="Ground" pos="300,220"/>
+        <port name="Ground" pos="30,220"/>
+        <port name="Ground" pos="180,220"/>
+    </ports>
+    <wires>
+        <wire start="170,30" end="300,30"/>
+        <wire start="300,30" end="300,100"/>
+        <wire start="130,30" end="30,30"/>
+        <wire start="30,140" end="30,30"/>
+        <wire start="180,200" end="180,220"/>
+        <wire start="180,110" end="180,140"/>
+        <wire start="280,110" end="180,110"/>
+        <wire start="300,120" end="300,220"/>
+        <wire start="30,200" end="30,220"/>
+    </wires>
+</caneda>

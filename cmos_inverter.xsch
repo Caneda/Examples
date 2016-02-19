@@ -1,0 +1,122 @@
+<?xml version="1.0"?>
+<!DOCTYPE caneda>
+<caneda version="0.1.0">
+    <components>
+        <component name="PMOS Transistor" library="Semiconductor" pos="230,10" transform="1,0,0,1,0,0">
+            <properties pos="-14,14">
+                <property name="ad" value="0.0" visible="false"/>
+                <property name="as" value="0.0" visible="false"/>
+                <property name="ic_vbs" value="0" visible="false"/>
+                <property name="ic_vds" value="0" visible="false"/>
+                <property name="ic_vgs" value="0" visible="false"/>
+                <property name="l" value="3u" visible="false"/>
+                <property name="label" value="M2" visible="true"/>
+                <property name="m" value="1.0" visible="false"/>
+                <property name="model" value="PMOS" visible="false"/>
+                <property name="nrd" value="1.0" visible="false"/>
+                <property name="nrs" value="1.0" visible="false"/>
+                <property name="off" value="" visible="false"/>
+                <property name="pd" value="0.0" visible="false"/>
+                <property name="ps" value="0.0" visible="false"/>
+                <property name="temp" value="26.5" visible="false"/>
+                <property name="w" value="15u" visible="false"/>
+            </properties>
+        </component>
+        <component name="Voltage Source" library="Sources" pos="-20,100" transform="1,0,0,1,0,0">
+            <properties pos="-90,-10">
+                <property name="Vac" value="1" visible="false"/>
+                <property name="Vdc" value="3.3" visible="true"/>
+                <property name="f1mag" value="1.0" visible="false"/>
+                <property name="f1phase" value="0" visible="false"/>
+                <property name="f2mag" value="1.0" visible="false"/>
+                <property name="f2phase" value="0" visible="false"/>
+                <property name="label" value="V2" visible="true"/>
+                <property name="phase" value="0" visible="false"/>
+            </properties>
+        </component>
+        <component name="NMOS Transistor" library="Semiconductor" pos="230,90" transform="1,0,0,1,0,0">
+            <properties pos="-20,10">
+                <property name="ad" value="0.0" visible="false"/>
+                <property name="as" value="0.0" visible="false"/>
+                <property name="ic_vbs" value="0" visible="false"/>
+                <property name="ic_vds" value="0" visible="false"/>
+                <property name="ic_vgs" value="0" visible="false"/>
+                <property name="l" value="3u" visible="false"/>
+                <property name="label" value="M1" visible="true"/>
+                <property name="m" value="1.0" visible="false"/>
+                <property name="model" value="NMOS" visible="false"/>
+                <property name="nrd" value="1.0" visible="false"/>
+                <property name="nrs" value="1.0" visible="false"/>
+                <property name="off" value="" visible="false"/>
+                <property name="pd" value="0.0" visible="false"/>
+                <property name="ps" value="0.0" visible="false"/>
+                <property name="temp" value="26.5" visible="false"/>
+                <property name="w" value="9u" visible="false"/>
+            </properties>
+        </component>
+        <component name="Voltage Source Pulse" library="Sources" pos="140,100" transform="1,0,0,1,0,0">
+            <properties pos="-100,-30">
+                <property name="PW" value="0.5m" visible="true"/>
+                <property name="V1" value="0" visible="true"/>
+                <property name="V2" value="3.3" visible="true"/>
+                <property name="label" value="V1" visible="true"/>
+                <property name="per" value="1m" visible="true"/>
+                <property name="td" value="0.0" visible="false"/>
+                <property name="tf" value="0.0" visible="false"/>
+                <property name="tr" value="0.0" visible="false"/>
+            </properties>
+        </component>
+        <component name="Transient Simulation" library="Simulations" pos="430,70" transform="1,0,0,1,0,0">
+            <properties pos="-21,21">
+                <property name="label" value="Sim1" visible="true"/>
+                <property name="tmax" value="" visible="false"/>
+                <property name="tstart" value="0" visible="false"/>
+                <property name="tstep" value="1u" visible="true"/>
+                <property name="tstop" value="5m" visible="true"/>
+                <property name="uic" value="" visible="false"/>
+            </properties>
+        </component>
+        <component name="Capacitor" library="Passive" pos="310,110" transform="0,-1,1,0,0,0">
+            <properties pos="10,20">
+                <property name="C" value="200f" visible="true"/>
+                <property name="dtemp" value="1.0" visible="false"/>
+                <property name="ic" value="0" visible="false"/>
+                <property name="label" value="C1" visible="true"/>
+                <property name="m" value="1.0" visible="false"/>
+                <property name="model" value="C" visible="false"/>
+                <property name="scale" value="1.0" visible="false"/>
+                <property name="tc1" value="0.0" visible="false"/>
+                <property name="tc2" value="0.0" visible="false"/>
+                <property name="temp" value="26.5" visible="false"/>
+            </properties>
+        </component>
+    </components>
+    <ports>
+        <port name="in" pos="140,50"/>
+        <port name="out" pos="310,50"/>
+        <port name="Ground" pos="240,150"/>
+        <port name="vdd" pos="240,-50"/>
+        <port name="vdd" pos="-20,30"/>
+        <port name="Ground" pos="-20,150"/>
+        <port name="Ground" pos="140,150"/>
+        <port name="Ground" pos="310,150"/>
+    </ports>
+    <wires>
+        <wire start="140,50" end="200,50"/>
+        <wire start="140,70" end="140,50"/>
+        <wire start="310,130" end="310,150"/>
+        <wire start="240,50" end="240,80"/>
+        <wire start="310,50" end="310,90"/>
+        <wire start="200,50" end="200,10"/>
+        <wire start="240,50" end="310,50"/>
+        <wire start="240,20" end="240,50"/>
+        <wire start="200,90" end="200,50"/>
+        <wire start="-20,70" end="-20,30"/>
+        <wire start="-20,150" end="-20,130"/>
+        <wire start="240,0" end="240,-50"/>
+        <wire start="200,10" end="220,10"/>
+        <wire start="220,90" end="200,90"/>
+        <wire start="240,100" end="240,150"/>
+        <wire start="140,130" end="140,150"/>
+    </wires>
+</caneda>
