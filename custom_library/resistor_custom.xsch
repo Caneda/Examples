@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<!DOCTYPE caneda>
+<caneda version="0.1.0">
+    <components>
+        <component name="Resistor" library="Passive" pos="100,140" transform="1,0,0,1,0,0">
+            <properties pos="-50,30">
+                <property name="R" value="{R_custom}" visible="true"/>
+                <property name="dtemp" value="1.0" visible="false"/>
+                <property name="label" value="R1" visible="false"/>
+                <property name="m" value="1.0" visible="false"/>
+                <property name="noisy" value="0" visible="false"/>
+                <property name="scale" value="1.0" visible="false"/>
+                <property name="tc1" value="0.0" visible="false"/>
+                <property name="tc2" value="0.0" visible="false"/>
+                <property name="temp" value="26.5" visible="false"/>
+            </properties>
+        </component>
+    </components>
+    <ports>
+        <port name="-" pos="140,140"/>
+        <port name="+" pos="60,140"/>
+    </ports>
+    <wires>
+        <wire start="120,140" end="140,140"/>
+        <wire start="80,140" end="60,140"/>
+    </wires>
+</caneda>

@@ -1,0 +1,44 @@
+<?xml version="1.0"?>
+<!DOCTYPE caneda>
+<component name="resistor_custom" version="0.1.0" label="X">
+    <displaytext>
+        <lang lang="C">User created component</lang>
+    </displaytext>
+    <description>
+        <lang lang="C">User created component based on user symbol</lang>
+    </description>
+    <symbol>
+        <painting name="line" line="0,0,0,-20" pos="50,10" transform="1,0,0,1,0,0">
+            <pen width="1" color="#808080" style="1"/>
+        </painting>
+        <painting name="line" line="0,0,0,-20" pos="-10,10" transform="1,0,0,1,0,0">
+            <pen width="1" color="#808080" style="1"/>
+        </painting>
+        <painting name="line" line="0,0,60,0" pos="-10,10" transform="1,0,0,1,0,0">
+            <pen width="1" color="#808080" style="1"/>
+        </painting>
+        <painting name="line" line="0,0,60,0" pos="-10,-10" transform="1,0,0,1,0,0">
+            <pen width="1" color="#808080" style="1"/>
+        </painting>
+        <painting name="line" line="0,0,-10,0" pos="60,0" transform="1,0,0,1,0,0">
+            <pen width="1" color="#808080" style="1"/>
+        </painting>
+        <painting name="line" line="0,0,10,0" pos="-20,0" transform="1,0,0,1,0,0">
+            <pen width="1" color="#808080" style="1"/>
+        </painting>
+    </symbol>
+    <ports>
+        <port name="-" pos="60,0"/>
+        <port name="+" pos="-20,0"/>
+    </ports>
+    <properties pos="-20,30">
+        <property name="R_custom" default="1k" unit="-" visible="true">
+            <description>
+                <lang lang="C">Resistance value.</lang>
+            </description>
+        </property>
+    </properties>
+    <models>
+        <model type="spice" syntax="X%label %port{-} %port{+} resistor_custom R_custom=%property{R_custom} %subcircuit{resistor_custom - + R_custom=0 %n.include %librarypath/resistor_custom.net} %generateNetlist"/>
+    </models>
+</component>
