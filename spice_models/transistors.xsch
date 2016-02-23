@@ -1,0 +1,358 @@
+<?xml version="1.0"?>
+<!DOCTYPE caneda>
+<caneda version="0.1.0">
+    <components>
+        <component name="NPN Transistor" library="Semiconductor" pos="650,70" transform="1,0,0,1,0,0">
+            <properties pos="20,20">
+                <property name="area" value="1.0" visible="false"/>
+                <property name="areab" value="1.0" visible="false"/>
+                <property name="areac" value="1.0" visible="false"/>
+                <property name="dtemp" value="1.0" visible="false"/>
+                <property name="ic_vbe" value="0" visible="false"/>
+                <property name="ic_vce" value="0" visible="false"/>
+                <property name="label" value="Q3" visible="true"/>
+                <property name="m" value="1.0" visible="false"/>
+                <property name="model" value="BC548C" visible="true"/>
+                <property name="off" value="" visible="false"/>
+                <property name="temp" value="26.5" visible="false"/>
+            </properties>
+        </component>
+        <component name="Capacitor" library="Passive" pos="580,70" transform="1,0,0,1,0,0">
+            <properties pos="-20,10">
+                <property name="C" value="1u" visible="true"/>
+                <property name="dtemp" value="1.0" visible="false"/>
+                <property name="ic" value="0" visible="false"/>
+                <property name="label" value="C3" visible="true"/>
+                <property name="m" value="1.0" visible="false"/>
+                <property name="model" value="C" visible="false"/>
+                <property name="scale" value="1.0" visible="false"/>
+                <property name="tc1" value="0.0" visible="false"/>
+                <property name="tc2" value="0.0" visible="false"/>
+                <property name="temp" value="26.5" visible="false"/>
+            </properties>
+        </component>
+        <component name="Capacitor" library="Passive" pos="320,70" transform="1,0,0,1,0,0">
+            <properties pos="-20,10">
+                <property name="C" value="1u" visible="true"/>
+                <property name="dtemp" value="1.0" visible="false"/>
+                <property name="ic" value="0" visible="false"/>
+                <property name="label" value="C2" visible="true"/>
+                <property name="m" value="1.0" visible="false"/>
+                <property name="model" value="C" visible="false"/>
+                <property name="scale" value="1.0" visible="false"/>
+                <property name="tc1" value="0.0" visible="false"/>
+                <property name="tc2" value="0.0" visible="false"/>
+                <property name="temp" value="26.5" visible="false"/>
+            </properties>
+        </component>
+        <component name="Resistor" library="Passive" pos="340,20" transform="0,-1,1,0,0,0">
+            <properties pos="10,-70">
+                <property name="R" value="200k" visible="true"/>
+                <property name="dtemp" value="1.0" visible="false"/>
+                <property name="label" value="Rb2" visible="true"/>
+                <property name="m" value="1.0" visible="false"/>
+                <property name="noisy" value="0" visible="false"/>
+                <property name="scale" value="1.0" visible="false"/>
+                <property name="tc1" value="0.0" visible="false"/>
+                <property name="tc2" value="0.0" visible="false"/>
+                <property name="temp" value="26.5" visible="false"/>
+            </properties>
+        </component>
+        <component name="Resistor" library="Passive" pos="660,20" transform="0,-1,1,0,0,0">
+            <properties pos="10,20">
+                <property name="R" value="1k" visible="true"/>
+                <property name="dtemp" value="1.0" visible="false"/>
+                <property name="label" value="Rc3" visible="true"/>
+                <property name="m" value="1.0" visible="false"/>
+                <property name="noisy" value="0" visible="false"/>
+                <property name="scale" value="1.0" visible="false"/>
+                <property name="tc1" value="0.0" visible="false"/>
+                <property name="tc2" value="0.0" visible="false"/>
+                <property name="temp" value="26.5" visible="false"/>
+            </properties>
+        </component>
+        <component name="Resistor" library="Passive" pos="600,20" transform="0,-1,1,0,0,0">
+            <properties pos="10,-70">
+                <property name="R" value="200k" visible="true"/>
+                <property name="dtemp" value="1.0" visible="false"/>
+                <property name="label" value="Rb3" visible="true"/>
+                <property name="m" value="1.0" visible="false"/>
+                <property name="noisy" value="0" visible="false"/>
+                <property name="scale" value="1.0" visible="false"/>
+                <property name="tc1" value="0.0" visible="false"/>
+                <property name="tc2" value="0.0" visible="false"/>
+                <property name="temp" value="26.5" visible="false"/>
+            </properties>
+        </component>
+        <component name="NPN Transistor" library="Semiconductor" pos="390,70" transform="1,0,0,1,0,0">
+            <properties pos="20,20">
+                <property name="area" value="1.0" visible="false"/>
+                <property name="areab" value="1.0" visible="false"/>
+                <property name="areac" value="1.0" visible="false"/>
+                <property name="dtemp" value="1.0" visible="false"/>
+                <property name="ic_vbe" value="0" visible="false"/>
+                <property name="ic_vce" value="0" visible="false"/>
+                <property name="label" value="Q2" visible="true"/>
+                <property name="m" value="1.0" visible="false"/>
+                <property name="model" value="MyModel" visible="true"/>
+                <property name="off" value="" visible="false"/>
+                <property name="temp" value="26.5" visible="false"/>
+            </properties>
+        </component>
+        <component name="Capacitor" library="Passive" pos="60,70" transform="1,0,0,1,0,0">
+            <properties pos="-20,10">
+                <property name="C" value="1u" visible="true"/>
+                <property name="dtemp" value="1.0" visible="false"/>
+                <property name="ic" value="0" visible="false"/>
+                <property name="label" value="C1" visible="true"/>
+                <property name="m" value="1.0" visible="false"/>
+                <property name="model" value="C" visible="false"/>
+                <property name="scale" value="1.0" visible="false"/>
+                <property name="tc1" value="0.0" visible="false"/>
+                <property name="tc2" value="0.0" visible="false"/>
+                <property name="temp" value="26.5" visible="false"/>
+            </properties>
+        </component>
+        <component name="NPN Transistor Model" library="Models" pos="830,100" transform="1,0,0,1,0,0">
+            <properties pos="-20,20">
+                <property name="AF" value="1" visible="false"/>
+                <property name="BF" value="150" visible="false"/>
+                <property name="BR" value="1" visible="false"/>
+                <property name="CJC" value="0" visible="false"/>
+                <property name="CJE" value="0" visible="false"/>
+                <property name="CJS" value="0" visible="false"/>
+                <property name="CTC" value="0" visible="false"/>
+                <property name="CTE" value="0" visible="false"/>
+                <property name="CTS" value="0" visible="false"/>
+                <property name="EG" value="1.11" visible="false"/>
+                <property name="FC" value="0.5" visible="false"/>
+                <property name="IKF" value="100G" visible="false"/>
+                <property name="IKR" value="100G" visible="false"/>
+                <property name="IRB" value="100G" visible="false"/>
+                <property name="IS" value="1e-16" visible="false"/>
+                <property name="ISC" value="0" visible="false"/>
+                <property name="ISE" value="0" visible="false"/>
+                <property name="ISS" value="1e-16" visible="false"/>
+                <property name="ITF" value="0" visible="false"/>
+                <property name="KF" value="0" visible="false"/>
+                <property name="LEVEL" value="1" visible="false"/>
+                <property name="MJC" value="0.33" visible="false"/>
+                <property name="MJE" value="0.33" visible="false"/>
+                <property name="MJS" value="0" visible="false"/>
+                <property name="NC" value="2" visible="false"/>
+                <property name="NE" value="1.5" visible="false"/>
+                <property name="NF" value="1" visible="false"/>
+                <property name="NKF" value="0.5" visible="false"/>
+                <property name="NR" value="1" visible="false"/>
+                <property name="PTF" value="0" visible="false"/>
+                <property name="RB" value="0" visible="false"/>
+                <property name="RBM" value="0" visible="false"/>
+                <property name="RC" value="0" visible="false"/>
+                <property name="RE" value="0" visible="false"/>
+                <property name="SUBS" value="1" visible="false"/>
+                <property name="TBF1" value="0" visible="false"/>
+                <property name="TBF2" value="0" visible="false"/>
+                <property name="TBR1" value="0" visible="false"/>
+                <property name="TBR2" value="0" visible="false"/>
+                <property name="TF" value="0" visible="false"/>
+                <property name="TIKF1" value="0" visible="false"/>
+                <property name="TIKF2" value="0" visible="false"/>
+                <property name="TIKR1" value="0" visible="false"/>
+                <property name="TIKR2" value="0" visible="false"/>
+                <property name="TIRB1" value="0" visible="false"/>
+                <property name="TIRB2" value="0" visible="false"/>
+                <property name="TITF1" value="0" visible="false"/>
+                <property name="TITF2" value="0" visible="false"/>
+                <property name="TLEV" value="0" visible="false"/>
+                <property name="TLEVC" value="0" visible="false"/>
+                <property name="TMJC1" value="0" visible="false"/>
+                <property name="TMJC2" value="0" visible="false"/>
+                <property name="TMJE1" value="0" visible="false"/>
+                <property name="TMJE2" value="0" visible="false"/>
+                <property name="TNC1" value="0" visible="false"/>
+                <property name="TNC2" value="0" visible="false"/>
+                <property name="TNE1" value="0" visible="false"/>
+                <property name="TNE2" value="0" visible="false"/>
+                <property name="TNF1" value="0" visible="false"/>
+                <property name="TNF2" value="0" visible="false"/>
+                <property name="TNOM" value="27" visible="false"/>
+                <property name="TNR1" value="0" visible="false"/>
+                <property name="TNR2" value="0" visible="false"/>
+                <property name="TR" value="0" visible="false"/>
+                <property name="TRB1" value="0" visible="false"/>
+                <property name="TRB2" value="0" visible="false"/>
+                <property name="TRBM1" value="0" visible="false"/>
+                <property name="TRBM2" value="0" visible="false"/>
+                <property name="TRC1" value="0" visible="false"/>
+                <property name="TRC2" value="0" visible="false"/>
+                <property name="TRE1" value="0" visible="false"/>
+                <property name="TRE2" value="0" visible="false"/>
+                <property name="TTF1" value="0" visible="false"/>
+                <property name="TTF2" value="0" visible="false"/>
+                <property name="TTR1" value="0" visible="false"/>
+                <property name="TTR2" value="0" visible="false"/>
+                <property name="TVAF1" value="0" visible="false"/>
+                <property name="TVAF2" value="0" visible="false"/>
+                <property name="TVAR1" value="0" visible="false"/>
+                <property name="TVAR2" value="0" visible="false"/>
+                <property name="TVJC" value="0" visible="false"/>
+                <property name="TVJE" value="0" visible="false"/>
+                <property name="VAF" value="100G" visible="false"/>
+                <property name="VAR" value="100G" visible="false"/>
+                <property name="VJC" value="0.75" visible="false"/>
+                <property name="VJE" value="0.75" visible="false"/>
+                <property name="VJS" value="0.75" visible="false"/>
+                <property name="VTF" value="100G" visible="false"/>
+                <property name="XCJC" value="1" visible="false"/>
+                <property name="XTB" value="0" visible="false"/>
+                <property name="XTF" value="0" visible="false"/>
+                <property name="XTI" value="3" visible="false"/>
+                <property name="label" value="TransistorModel" visible="true"/>
+                <property name="model" value="MyModel" visible="true"/>
+            </properties>
+        </component>
+        <component name="Resistor" library="Passive" pos="400,20" transform="0,-1,1,0,0,0">
+            <properties pos="10,20">
+                <property name="R" value="1k" visible="true"/>
+                <property name="dtemp" value="1.0" visible="false"/>
+                <property name="label" value="Rc2" visible="true"/>
+                <property name="m" value="1.0" visible="false"/>
+                <property name="noisy" value="0" visible="false"/>
+                <property name="scale" value="1.0" visible="false"/>
+                <property name="tc1" value="0.0" visible="false"/>
+                <property name="tc2" value="0.0" visible="false"/>
+                <property name="temp" value="26.5" visible="false"/>
+            </properties>
+        </component>
+        <component name="Voltage Source" library="Sources" pos="-220,40" transform="1,0,0,1,0,0">
+            <properties pos="-80,-20">
+                <property name="Vac" value="1" visible="false"/>
+                <property name="Vdc" value="12" visible="true"/>
+                <property name="f1mag" value="1.0" visible="false"/>
+                <property name="f1phase" value="0" visible="false"/>
+                <property name="f2mag" value="1.0" visible="false"/>
+                <property name="f2phase" value="0" visible="false"/>
+                <property name="label" value="V2" visible="true"/>
+                <property name="phase" value="0" visible="false"/>
+            </properties>
+        </component>
+        <component name="Resistor" library="Passive" pos="80,20" transform="0,-1,1,0,0,0">
+            <properties pos="10,-70">
+                <property name="R" value="200k" visible="true"/>
+                <property name="dtemp" value="1.0" visible="false"/>
+                <property name="label" value="Rb1" visible="true"/>
+                <property name="m" value="1.0" visible="false"/>
+                <property name="noisy" value="0" visible="false"/>
+                <property name="scale" value="1.0" visible="false"/>
+                <property name="tc1" value="0.0" visible="false"/>
+                <property name="tc2" value="0.0" visible="false"/>
+                <property name="temp" value="26.5" visible="false"/>
+            </properties>
+        </component>
+        <component name="Resistor" library="Passive" pos="140,20" transform="0,-1,1,0,0,0">
+            <properties pos="10,20">
+                <property name="R" value="1k" visible="true"/>
+                <property name="dtemp" value="1.0" visible="false"/>
+                <property name="label" value="Rc1" visible="true"/>
+                <property name="m" value="1.0" visible="false"/>
+                <property name="noisy" value="0" visible="false"/>
+                <property name="scale" value="1.0" visible="false"/>
+                <property name="tc1" value="0.0" visible="false"/>
+                <property name="tc2" value="0.0" visible="false"/>
+                <property name="temp" value="26.5" visible="false"/>
+            </properties>
+        </component>
+        <component name="NPN Transistor" library="Semiconductor" pos="130,70" transform="1,0,0,1,0,0">
+            <properties pos="20,20">
+                <property name="area" value="1.0" visible="false"/>
+                <property name="areab" value="1.0" visible="false"/>
+                <property name="areac" value="1.0" visible="false"/>
+                <property name="dtemp" value="1.0" visible="false"/>
+                <property name="ic_vbe" value="0" visible="false"/>
+                <property name="ic_vce" value="0" visible="false"/>
+                <property name="label" value="Q1" visible="true"/>
+                <property name="m" value="1.0" visible="false"/>
+                <property name="model" value="NPN" visible="false"/>
+                <property name="off" value="" visible="false"/>
+                <property name="temp" value="26.5" visible="false"/>
+            </properties>
+        </component>
+        <component name="Include" library="Miscellaneous" pos="810,160" transform="1,0,0,1,0,0">
+            <properties pos="0,30">
+                <property name="Filename" value="library.lib" visible="true"/>
+                <property name="label" value="Include" visible="true"/>
+            </properties>
+        </component>
+        <component name="Voltage Source Sinusoidal" library="Sources" pos="-90,40" transform="1,0,0,1,0,0">
+            <properties pos="-90,-20">
+                <property name="Va" value="5m" visible="true"/>
+                <property name="Voff" value="0" visible="false"/>
+                <property name="freq" value="1k" visible="true"/>
+                <property name="label" value="V1" visible="true"/>
+                <property name="td" value="0.0" visible="false"/>
+                <property name="theta" value="0.0" visible="false"/>
+            </properties>
+        </component>
+        <component name="Transient Simulation" library="Simulations" pos="830,-10" transform="1,0,0,1,0,0">
+            <properties pos="-20,20">
+                <property name="label" value="Sim1" visible="true"/>
+                <property name="tmax" value="" visible="false"/>
+                <property name="tstart" value="0" visible="false"/>
+                <property name="tstep" value="1u" visible="true"/>
+                <property name="tstop" value="1m" visible="true"/>
+                <property name="uic" value="" visible="false"/>
+            </properties>
+        </component>
+    </components>
+    <ports>
+        <port name="Vcc" pos="600,-20"/>
+        <port name="Ground" pos="660,120"/>
+        <port name="Vcc" pos="660,-20"/>
+        <port name="output3" pos="700,60"/>
+        <port name="output2" pos="440,60"/>
+        <port name="input" pos="520,70"/>
+        <port name="output1" pos="180,60"/>
+        <port name="Vcc" pos="340,-20"/>
+        <port name="input" pos="0,70"/>
+        <port name="Ground" pos="400,120"/>
+        <port name="Vcc" pos="400,-20"/>
+        <port name="input" pos="260,70"/>
+        <port name="Vcc" pos="-220,-30"/>
+        <port name="Ground" pos="-220,90"/>
+        <port name="Vcc" pos="80,-20"/>
+        <port name="Vcc" pos="140,-20"/>
+        <port name="Ground" pos="140,120"/>
+        <port name="Ground" pos="-90,90"/>
+        <port name="input" pos="-90,-30"/>
+    </ports>
+    <wires>
+        <wire start="660,0" end="660,-20"/>
+        <wire start="520,70" end="560,70"/>
+        <wire start="600,40" end="600,70"/>
+        <wire start="660,40" end="660,60"/>
+        <wire start="600,70" end="640,70"/>
+        <wire start="400,60" end="440,60"/>
+        <wire start="660,60" end="700,60"/>
+        <wire start="400,80" end="400,120"/>
+        <wire start="340,40" end="340,70"/>
+        <wire start="400,40" end="400,60"/>
+        <wire start="660,80" end="660,120"/>
+        <wire start="600,-20" end="600,0"/>
+        <wire start="400,0" end="400,-20"/>
+        <wire start="140,60" end="180,60"/>
+        <wire start="260,70" end="300,70"/>
+        <wire start="0,70" end="40,70"/>
+        <wire start="340,70" end="380,70"/>
+        <wire start="-220,70" end="-220,90"/>
+        <wire start="340,-20" end="340,0"/>
+        <wire start="-220,-30" end="-220,10"/>
+        <wire start="80,70" end="120,70"/>
+        <wire start="80,40" end="80,70"/>
+        <wire start="80,-20" end="80,0"/>
+        <wire start="140,0" end="140,-20"/>
+        <wire start="140,40" end="140,60"/>
+        <wire start="140,80" end="140,120"/>
+        <wire start="-90,70" end="-90,90"/>
+        <wire start="-90,-30" end="-90,10"/>
+    </wires>
+</caneda>

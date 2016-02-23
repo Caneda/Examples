@@ -1,0 +1,10 @@
+.MODEL 1N4148 D(IS=2.5n RS=0.56 N=1.7 CJO=4p M=0.4)
+.MODEL BC548C NPN(IS=1.95e-14 ISE=1.3f ISC=1e-13 BF=166 BR=2.42 IKF=0.18 VAF=91.7 RE=1 RC=1.7 RB=26.5 CJE=1.3e-11 CJC=5.1p)
+.SUBCKT LM324 in+ in- out av=100k rin=100Meg rout=0 gbw=10Meg
+Rin in+ in- 100Meg
+Eg 1 0 in+ in- 7
+Rp 1 2 10k
+Cp 2 0 160n
+Eout 3 0 2 0 1
+Rout 3 out 10
+.ends

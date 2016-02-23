@@ -1,0 +1,74 @@
+<?xml version="1.0"?>
+<!DOCTYPE caneda>
+<caneda version="0.1.0">
+    <components>
+        <component name="Opamp" library="Active" pos="100,-20" transform="1,0,0,1,0,0">
+            <properties pos="-20,30">
+                <property name="Av" value="5" visible="false"/>
+                <property name="GBW" value="10Meg" visible="false"/>
+                <property name="Rin" value="100Meg" visible="false"/>
+                <property name="Rout" value="0" visible="false"/>
+                <property name="label" value="X1" visible="true"/>
+                <property name="model" value="OPAMP" visible="false"/>
+            </properties>
+        </component>
+        <component name="Transient Simulation" library="Simulations" pos="450,-20" transform="1,0,0,1,0,0">
+            <properties pos="-20,20">
+                <property name="label" value="Sim1" visible="true"/>
+                <property name="tmax" value="" visible="false"/>
+                <property name="tstart" value="0" visible="false"/>
+                <property name="tstep" value="1u" visible="true"/>
+                <property name="tstop" value="1m" visible="true"/>
+                <property name="uic" value="" visible="false"/>
+            </properties>
+        </component>
+        <component name="Voltage Source Sinusoidal" library="Sources" pos="-90,40" transform="1,0,0,1,0,0">
+            <properties pos="-90,-20">
+                <property name="Va" value="5m" visible="true"/>
+                <property name="Voff" value="0" visible="false"/>
+                <property name="freq" value="1k" visible="true"/>
+                <property name="label" value="V1" visible="true"/>
+                <property name="td" value="0.0" visible="false"/>
+                <property name="theta" value="0.0" visible="false"/>
+            </properties>
+        </component>
+        <component name="Include" library="Miscellaneous" pos="430,60" transform="1,0,0,1,0,0">
+            <properties pos="0,30">
+                <property name="Filename" value="library.lib" visible="true"/>
+                <property name="label" value="Include" visible="true"/>
+            </properties>
+        </component>
+        <component name="Opamp" library="Active" pos="300,-20" transform="1,0,0,1,0,0">
+            <properties pos="-20,30">
+                <property name="Av" value="5" visible="false"/>
+                <property name="GBW" value="10Meg" visible="false"/>
+                <property name="Rin" value="100Meg" visible="false"/>
+                <property name="Rout" value="0" visible="false"/>
+                <property name="label" value="X2" visible="true"/>
+                <property name="model" value="LM324" visible="true"/>
+            </properties>
+        </component>
+    </components>
+    <ports>
+        <port name="output1" pos="150,-20"/>
+        <port name="Ground" pos="60,20"/>
+        <port name="input" pos="30,-30"/>
+        <port name="input" pos="-90,-30"/>
+        <port name="Ground" pos="-90,90"/>
+        <port name="output2" pos="350,-20"/>
+        <port name="input" pos="230,-30"/>
+        <port name="Ground" pos="260,20"/>
+    </ports>
+    <wires>
+        <wire start="130,-20" end="150,-20"/>
+        <wire start="60,-10" end="60,20"/>
+        <wire start="70,-10" end="60,-10"/>
+        <wire start="30,-30" end="70,-30"/>
+        <wire start="-90,-30" end="-90,10"/>
+        <wire start="-90,70" end="-90,90"/>
+        <wire start="270,-10" end="260,-10"/>
+        <wire start="330,-20" end="350,-20"/>
+        <wire start="260,-10" end="260,20"/>
+        <wire start="230,-30" end="270,-30"/>
+    </wires>
+</caneda>
