@@ -2,121 +2,28 @@
 <!DOCTYPE caneda>
 <caneda version="0.1.0">
     <components>
-        <component name="Transient Simulation" library="Simulations" pos="50,200" transform="1,0,0,1,0,0">
-            <properties pos="-20,20">
-                <property name="label" value="Sim1" visible="true"/>
-                <property name="tmax" value="" visible="false"/>
-                <property name="tstart" value="0" visible="false"/>
-                <property name="tstep" value="10p" visible="true"/>
-                <property name="tstop" value="4n" visible="true"/>
-                <property name="uic" value="" visible="false"/>
+        <component name="Voltage Source" library="Sources" pos="-100,120" transform="1,0,0,1,0,0">
+            <properties pos="30,-20">
+                <property name="Vac" value="1" visible="false"/>
+                <property name="Vdc" value="3.3" visible="true"/>
+                <property name="f1mag" value="1.0" visible="false"/>
+                <property name="f1phase" value="0" visible="false"/>
+                <property name="f2mag" value="1.0" visible="false"/>
+                <property name="f2phase" value="0" visible="false"/>
+                <property name="label" value="V1" visible="true"/>
+                <property name="phase" value="0" visible="false"/>
             </properties>
         </component>
-        <component name="Capacitor" library="Passive" pos="630,80" transform="0,-1,1,0,0,0">
-            <properties pos="0,20">
-                <property name="C" value="100f" visible="true"/>
-                <property name="dtemp" value="1.0" visible="false"/>
-                <property name="ic" value="0" visible="false"/>
-                <property name="label" value="C5" visible="true"/>
-                <property name="m" value="1.0" visible="false"/>
-                <property name="model" value="C" visible="false"/>
-                <property name="scale" value="1.0" visible="false"/>
-                <property name="tc1" value="0.0" visible="false"/>
-                <property name="tc2" value="0.0" visible="false"/>
-                <property name="temp" value="26.5" visible="false"/>
-            </properties>
-        </component>
-        <component name="CMOS Inverter" library="Active" pos="550,40" transform="1,0,0,1,0,0">
+        <component name="Inverter" library="CMOS" pos="70,40" transform="1,0,0,1,0,0">
             <properties pos="-30,20">
                 <property name="Ln" value="0.35u" visible="false"/>
                 <property name="Lp" value="0.35u" visible="false"/>
-                <property name="Vdd" value="3.3" visible="false"/>
-                <property name="Vss" value="0" visible="false"/>
                 <property name="Wn" value="10.0u" visible="false"/>
                 <property name="Wp" value="20.0u" visible="false"/>
-                <property name="label" value="X5" visible="true"/>
-                <property name="model" value="CMOS_INVERTER" visible="false"/>
+                <property name="label" value="X1" visible="true"/>
             </properties>
         </component>
-        <component name="Capacitor" library="Passive" pos="490,80" transform="0,-1,1,0,0,0">
-            <properties pos="0,20">
-                <property name="C" value="100f" visible="true"/>
-                <property name="dtemp" value="1.0" visible="false"/>
-                <property name="ic" value="0" visible="false"/>
-                <property name="label" value="C4" visible="true"/>
-                <property name="m" value="1.0" visible="false"/>
-                <property name="model" value="C" visible="false"/>
-                <property name="scale" value="1.0" visible="false"/>
-                <property name="tc1" value="0.0" visible="false"/>
-                <property name="tc2" value="0.0" visible="false"/>
-                <property name="temp" value="26.5" visible="false"/>
-            </properties>
-        </component>
-        <component name="CMOS Inverter" library="Active" pos="430,40" transform="1,0,0,1,0,0">
-            <properties pos="-30,20">
-                <property name="Ln" value="0.35u" visible="false"/>
-                <property name="Lp" value="0.35u" visible="false"/>
-                <property name="Vdd" value="3.3" visible="false"/>
-                <property name="Vss" value="0" visible="false"/>
-                <property name="Wn" value="10.0u" visible="false"/>
-                <property name="Wp" value="20.0u" visible="false"/>
-                <property name="label" value="X4" visible="true"/>
-                <property name="model" value="CMOS_INVERTER" visible="false"/>
-            </properties>
-        </component>
-        <component name="Capacitor" library="Passive" pos="370,80" transform="0,-1,1,0,0,0">
-            <properties pos="0,20">
-                <property name="C" value="100f" visible="true"/>
-                <property name="dtemp" value="1.0" visible="false"/>
-                <property name="ic" value="0" visible="false"/>
-                <property name="label" value="C3" visible="true"/>
-                <property name="m" value="1.0" visible="false"/>
-                <property name="model" value="C" visible="false"/>
-                <property name="scale" value="1.0" visible="false"/>
-                <property name="tc1" value="0.0" visible="false"/>
-                <property name="tc2" value="0.0" visible="false"/>
-                <property name="temp" value="26.5" visible="false"/>
-            </properties>
-        </component>
-        <component name="CMOS Inverter" library="Active" pos="310,40" transform="1,0,0,1,0,0">
-            <properties pos="-30,20">
-                <property name="Ln" value="0.35u" visible="false"/>
-                <property name="Lp" value="0.35u" visible="false"/>
-                <property name="Vdd" value="3.3" visible="false"/>
-                <property name="Vss" value="0" visible="false"/>
-                <property name="Wn" value="10.0u" visible="false"/>
-                <property name="Wp" value="20.0u" visible="false"/>
-                <property name="label" value="X3" visible="true"/>
-                <property name="model" value="CMOS_INVERTER" visible="false"/>
-            </properties>
-        </component>
-        <component name="Capacitor" library="Passive" pos="250,80" transform="0,-1,1,0,0,0">
-            <properties pos="0,20">
-                <property name="C" value="100f" visible="true"/>
-                <property name="dtemp" value="1.0" visible="false"/>
-                <property name="ic" value="0" visible="false"/>
-                <property name="label" value="C2" visible="true"/>
-                <property name="m" value="1.0" visible="false"/>
-                <property name="model" value="C" visible="false"/>
-                <property name="scale" value="1.0" visible="false"/>
-                <property name="tc1" value="0.0" visible="false"/>
-                <property name="tc2" value="0.0" visible="false"/>
-                <property name="temp" value="26.5" visible="false"/>
-            </properties>
-        </component>
-        <component name="CMOS Inverter" library="Active" pos="190,40" transform="1,0,0,1,0,0">
-            <properties pos="-30,20">
-                <property name="Ln" value="0.35u" visible="false"/>
-                <property name="Lp" value="0.35u" visible="false"/>
-                <property name="Vdd" value="3.3" visible="false"/>
-                <property name="Vss" value="0" visible="false"/>
-                <property name="Wn" value="10.0u" visible="false"/>
-                <property name="Wp" value="20.0u" visible="false"/>
-                <property name="label" value="X2" visible="true"/>
-                <property name="model" value="CMOS_INVERTER" visible="false"/>
-            </properties>
-        </component>
-        <component name="Capacitor" library="Passive" pos="130,80" transform="0,-1,1,0,0,0">
+        <component name="Capacitor" library="Passive" pos="130,120" transform="0,-1,1,0,0,0">
             <properties pos="0,20">
                 <property name="C" value="100f" visible="true"/>
                 <property name="dtemp" value="1.0" visible="false"/>
@@ -130,51 +37,166 @@
                 <property name="temp" value="26.5" visible="false"/>
             </properties>
         </component>
-        <component name="CMOS Inverter" library="Active" pos="70,40" transform="1,0,0,1,0,0">
+        <component name="Inverter" library="CMOS" pos="190,40" transform="1,0,0,1,0,0">
             <properties pos="-30,20">
                 <property name="Ln" value="0.35u" visible="false"/>
                 <property name="Lp" value="0.35u" visible="false"/>
-                <property name="Vdd" value="3.3" visible="false"/>
-                <property name="Vss" value="0" visible="false"/>
                 <property name="Wn" value="10.0u" visible="false"/>
                 <property name="Wp" value="20.0u" visible="false"/>
-                <property name="label" value="X1" visible="true"/>
-                <property name="model" value="CMOS_INVERTER" visible="false"/>
+                <property name="label" value="X2" visible="true"/>
+            </properties>
+        </component>
+        <component name="Capacitor" library="Passive" pos="250,120" transform="0,-1,1,0,0,0">
+            <properties pos="0,20">
+                <property name="C" value="100f" visible="true"/>
+                <property name="dtemp" value="1.0" visible="false"/>
+                <property name="ic" value="0" visible="false"/>
+                <property name="label" value="C2" visible="true"/>
+                <property name="m" value="1.0" visible="false"/>
+                <property name="model" value="C" visible="false"/>
+                <property name="scale" value="1.0" visible="false"/>
+                <property name="tc1" value="0.0" visible="false"/>
+                <property name="tc2" value="0.0" visible="false"/>
+                <property name="temp" value="26.5" visible="false"/>
+            </properties>
+        </component>
+        <component name="Inverter" library="CMOS" pos="310,40" transform="1,0,0,1,0,0">
+            <properties pos="-30,20">
+                <property name="Ln" value="0.35u" visible="false"/>
+                <property name="Lp" value="0.35u" visible="false"/>
+                <property name="Wn" value="10.0u" visible="false"/>
+                <property name="Wp" value="20.0u" visible="false"/>
+                <property name="label" value="X3" visible="true"/>
+            </properties>
+        </component>
+        <component name="Capacitor" library="Passive" pos="370,120" transform="0,-1,1,0,0,0">
+            <properties pos="0,20">
+                <property name="C" value="100f" visible="true"/>
+                <property name="dtemp" value="1.0" visible="false"/>
+                <property name="ic" value="0" visible="false"/>
+                <property name="label" value="C3" visible="true"/>
+                <property name="m" value="1.0" visible="false"/>
+                <property name="model" value="C" visible="false"/>
+                <property name="scale" value="1.0" visible="false"/>
+                <property name="tc1" value="0.0" visible="false"/>
+                <property name="tc2" value="0.0" visible="false"/>
+                <property name="temp" value="26.5" visible="false"/>
+            </properties>
+        </component>
+        <component name="Inverter" library="CMOS" pos="430,40" transform="1,0,0,1,0,0">
+            <properties pos="-30,20">
+                <property name="Ln" value="0.35u" visible="false"/>
+                <property name="Lp" value="0.35u" visible="false"/>
+                <property name="Wn" value="10.0u" visible="false"/>
+                <property name="Wp" value="20.0u" visible="false"/>
+                <property name="label" value="X4" visible="true"/>
+            </properties>
+        </component>
+        <component name="Capacitor" library="Passive" pos="490,120" transform="0,-1,1,0,0,0">
+            <properties pos="0,20">
+                <property name="C" value="100f" visible="true"/>
+                <property name="dtemp" value="1.0" visible="false"/>
+                <property name="ic" value="0" visible="false"/>
+                <property name="label" value="C4" visible="true"/>
+                <property name="m" value="1.0" visible="false"/>
+                <property name="model" value="C" visible="false"/>
+                <property name="scale" value="1.0" visible="false"/>
+                <property name="tc1" value="0.0" visible="false"/>
+                <property name="tc2" value="0.0" visible="false"/>
+                <property name="temp" value="26.5" visible="false"/>
+            </properties>
+        </component>
+        <component name="Inverter" library="CMOS" pos="550,40" transform="1,0,0,1,0,0">
+            <properties pos="-30,20">
+                <property name="Ln" value="0.35u" visible="false"/>
+                <property name="Lp" value="0.35u" visible="false"/>
+                <property name="Wn" value="10.0u" visible="false"/>
+                <property name="Wp" value="20.0u" visible="false"/>
+                <property name="label" value="X5" visible="true"/>
+            </properties>
+        </component>
+        <component name="Capacitor" library="Passive" pos="630,120" transform="0,-1,1,0,0,0">
+            <properties pos="0,20">
+                <property name="C" value="100f" visible="true"/>
+                <property name="dtemp" value="1.0" visible="false"/>
+                <property name="ic" value="0" visible="false"/>
+                <property name="label" value="C5" visible="true"/>
+                <property name="m" value="1.0" visible="false"/>
+                <property name="model" value="C" visible="false"/>
+                <property name="scale" value="1.0" visible="false"/>
+                <property name="tc1" value="0.0" visible="false"/>
+                <property name="tc2" value="0.0" visible="false"/>
+                <property name="temp" value="26.5" visible="false"/>
+            </properties>
+        </component>
+        <component name="Transient Simulation" library="Simulations" pos="820,50" transform="1,0,0,1,0,0">
+            <properties pos="-20,20">
+                <property name="label" value="Sim1" visible="true"/>
+                <property name="tmax" value="" visible="false"/>
+                <property name="tstart" value="0" visible="false"/>
+                <property name="tstep" value="10p" visible="true"/>
+                <property name="tstop" value="4n" visible="true"/>
+                <property name="uic" value="" visible="false"/>
             </properties>
         </component>
     </components>
     <ports>
-        <port name="Ground" pos="630,110"/>
-        <port name="Ground" pos="490,110"/>
-        <port name="Ground" pos="370,110"/>
-        <port name="Ground" pos="250,110"/>
-        <port name="Ground" pos="130,110"/>
+        <port name="vdd" pos="310,-30"/>
+        <port name="vdd" pos="-100,60"/>
+        <port name="Ground" pos="-100,170"/>
+        <port name="Ground" pos="550,80"/>
+        <port name="Ground" pos="430,80"/>
+        <port name="Ground" pos="310,80"/>
+        <port name="Ground" pos="190,80"/>
+        <port name="Ground" pos="70,80"/>
         <port name="out" pos="720,40"/>
+        <port name="Ground" pos="130,170"/>
+        <port name="Ground" pos="250,170"/>
+        <port name="Ground" pos="370,170"/>
+        <port name="Ground" pos="490,180"/>
+        <port name="Ground" pos="630,180"/>
     </ports>
     <wires>
-        <wire start="630,60" end="630,40"/>
-        <wire start="490,40" end="520,40"/>
-        <wire start="460,40" end="490,40"/>
-        <wire start="490,60" end="490,40"/>
-        <wire start="370,40" end="400,40"/>
-        <wire start="340,40" end="370,40"/>
-        <wire start="250,40" end="280,40"/>
-        <wire start="370,60" end="370,40"/>
-        <wire start="20,40" end="40,40"/>
-        <wire start="220,40" end="250,40"/>
-        <wire start="20,-10" end="20,40"/>
-        <wire start="630,-10" end="20,-10"/>
-        <wire start="250,60" end="250,40"/>
-        <wire start="130,40" end="160,40"/>
-        <wire start="100,40" end="130,40"/>
-        <wire start="630,40" end="630,-10"/>
-        <wire start="130,60" end="130,40"/>
-        <wire start="630,110" end="630,100"/>
-        <wire start="490,110" end="490,100"/>
-        <wire start="370,110" end="370,100"/>
-        <wire start="250,110" end="250,100"/>
-        <wire start="130,110" end="130,100"/>
-        <wire start="580,40" end="630,40"/>
+        <wire start="70,60" end="70,80"/>
+        <wire start="190,60" end="190,80"/>
+        <wire start="310,60" end="310,80"/>
+        <wire start="430,60" end="430,80"/>
+        <wire start="550,60" end="550,80"/>
+        <wire start="430,0" end="550,0"/>
+        <wire start="190,0" end="310,0"/>
+        <wire start="310,0" end="430,0"/>
+        <wire start="70,0" end="190,0"/>
+        <wire start="310,-30" end="310,0"/>
+        <wire start="190,0" end="190,20"/>
+        <wire start="550,0" end="550,20"/>
+        <wire start="70,0" end="70,20"/>
+        <wire start="430,20" end="430,0"/>
+        <wire start="310,20" end="310,0"/>
+        <wire start="-100,150" end="-100,170"/>
+        <wire start="-100,60" end="-100,90"/>
         <wire start="720,40" end="630,40"/>
+        <wire start="580,40" end="630,40"/>
+        <wire start="130,170" end="130,140"/>
+        <wire start="250,170" end="250,140"/>
+        <wire start="370,170" end="370,140"/>
+        <wire start="490,180" end="490,140"/>
+        <wire start="630,180" end="630,140"/>
+        <wire start="130,100" end="130,40"/>
+        <wire start="630,40" end="630,-60"/>
+        <wire start="100,40" end="130,40"/>
+        <wire start="130,40" end="160,40"/>
+        <wire start="250,100" end="250,40"/>
+        <wire start="630,-60" end="20,-60"/>
+        <wire start="20,-60" end="20,40"/>
+        <wire start="220,40" end="250,40"/>
+        <wire start="20,40" end="40,40"/>
+        <wire start="370,100" end="370,40"/>
+        <wire start="250,40" end="280,40"/>
+        <wire start="340,40" end="370,40"/>
+        <wire start="370,40" end="400,40"/>
+        <wire start="490,100" end="490,40"/>
+        <wire start="460,40" end="490,40"/>
+        <wire start="490,40" end="520,40"/>
+        <wire start="630,100" end="630,40"/>
     </wires>
 </caneda>
