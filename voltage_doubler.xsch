@@ -1,0 +1,150 @@
+<?xml version="1.0"?>
+<!DOCTYPE caneda>
+<caneda version="0.1.0">
+    <components>
+        <component name="Diode" library="Semiconductor" pos="120,-50" transform="0,-1,1,0,0,0">
+            <properties pos="10,20">
+                <property name="area" value="1.0" visible="false"/>
+                <property name="dtemp" value="1.0" visible="false"/>
+                <property name="ic" value="0" visible="false"/>
+                <property name="label" value="D1" visible="true"/>
+                <property name="m" value="1.0" visible="false"/>
+                <property name="model" value="D" visible="false"/>
+                <property name="off" value="" visible="false"/>
+                <property name="pj" value="1.0" visible="false"/>
+                <property name="temp" value="26.5" visible="false"/>
+            </properties>
+        </component>
+        <component name="Capacitor" library="Passive" pos="40,-90" transform="1,0,0,1,0,0">
+            <properties pos="-20,10">
+                <property name="C" value="1u" visible="true"/>
+                <property name="dtemp" value="1.0" visible="false"/>
+                <property name="ic" value="0" visible="false"/>
+                <property name="label" value="C1" visible="true"/>
+                <property name="m" value="1.0" visible="false"/>
+                <property name="model" value="C" visible="false"/>
+                <property name="scale" value="1.0" visible="false"/>
+                <property name="tc1" value="0.0" visible="false"/>
+                <property name="tc2" value="0.0" visible="false"/>
+                <property name="temp" value="26.5" visible="false"/>
+            </properties>
+        </component>
+        <component name="Transient Simulation" library="Simulations" pos="580,-70" transform="1,0,0,1,0,0">
+            <properties pos="-20,20">
+                <property name="label" value="Sim1" visible="true"/>
+                <property name="tmax" value="" visible="false"/>
+                <property name="tstart" value="0" visible="false"/>
+                <property name="tstep" value="1u" visible="true"/>
+                <property name="tstop" value="10m" visible="true"/>
+                <property name="uic" value="" visible="false"/>
+            </properties>
+        </component>
+        <component name="Voltage Source Sinusoidal" library="Sources" pos="500,-20" transform="1,0,0,1,0,0">
+            <properties pos="-90,-20">
+                <property name="Va" value="5" visible="true"/>
+                <property name="Voff" value="0" visible="false"/>
+                <property name="freq" value="1k" visible="true"/>
+                <property name="label" value="V1" visible="true"/>
+                <property name="td" value="0.0" visible="false"/>
+                <property name="theta" value="0.0" visible="false"/>
+            </properties>
+        </component>
+        <component name="Diode" library="Semiconductor" pos="120,180" transform="0,-1,1,0,0,0">
+            <properties pos="10,20">
+                <property name="area" value="1.0" visible="false"/>
+                <property name="dtemp" value="1.0" visible="false"/>
+                <property name="ic" value="0" visible="false"/>
+                <property name="label" value="D2" visible="true"/>
+                <property name="m" value="1.0" visible="false"/>
+                <property name="model" value="D" visible="false"/>
+                <property name="off" value="" visible="false"/>
+                <property name="pj" value="1.0" visible="false"/>
+                <property name="temp" value="26.5" visible="false"/>
+            </properties>
+        </component>
+        <component name="Capacitor" library="Passive" pos="40,140" transform="1,0,0,1,0,0">
+            <properties pos="-10,10">
+                <property name="C" value="1u" visible="true"/>
+                <property name="dtemp" value="1.0" visible="false"/>
+                <property name="ic" value="0" visible="false"/>
+                <property name="label" value="C2" visible="true"/>
+                <property name="m" value="1.0" visible="false"/>
+                <property name="model" value="C" visible="false"/>
+                <property name="scale" value="1.0" visible="false"/>
+                <property name="tc1" value="0.0" visible="false"/>
+                <property name="tc2" value="0.0" visible="false"/>
+                <property name="temp" value="26.5" visible="false"/>
+            </properties>
+        </component>
+        <component name="Diode" library="Semiconductor" pos="200,140" transform="1,0,0,1,0,0">
+            <properties pos="-10,20">
+                <property name="area" value="1.0" visible="false"/>
+                <property name="dtemp" value="1.0" visible="false"/>
+                <property name="ic" value="0" visible="false"/>
+                <property name="label" value="D3" visible="true"/>
+                <property name="m" value="1.0" visible="false"/>
+                <property name="model" value="D" visible="false"/>
+                <property name="off" value="" visible="false"/>
+                <property name="pj" value="1.0" visible="false"/>
+                <property name="temp" value="26.5" visible="false"/>
+            </properties>
+        </component>
+        <component name="Capacitor" library="Passive" pos="280,180" transform="0,1,-1,0,0,0">
+            <properties pos="-10,-20">
+                <property name="C" value="1u" visible="true"/>
+                <property name="dtemp" value="1.0" visible="false"/>
+                <property name="ic" value="0" visible="false"/>
+                <property name="label" value="C3" visible="true"/>
+                <property name="m" value="1.0" visible="false"/>
+                <property name="model" value="C" visible="false"/>
+                <property name="scale" value="1.0" visible="false"/>
+                <property name="tc1" value="0.0" visible="false"/>
+                <property name="tc2" value="0.0" visible="false"/>
+                <property name="temp" value="26.5" visible="false"/>
+            </properties>
+        </component>
+    </components>
+    <ports>
+        <port name="greinacher" pos="280,140"/>
+        <port name="villard" pos="120,-90"/>
+        <port name="Ground" pos="120,220"/>
+        <port name="input" pos="-30,140"/>
+        <port name="Ground" pos="120,-10"/>
+        <port name="input" pos="-30,-90"/>
+        <port name="input" pos="500,-80"/>
+        <port name="Ground" pos="500,30"/>
+        <port name="Ground" pos="280,220"/>
+    </ports>
+    <wires>
+        <wire start="60,-90" end="120,-90"/>
+        <wire start="120,-10" end="120,-30"/>
+        <wire start="500,10" end="500,30"/>
+        <wire start="120,-70" end="120,-90"/>
+        <wire start="120,160" end="120,140"/>
+        <wire start="120,220" end="120,200"/>
+        <wire start="60,140" end="120,140"/>
+        <wire start="-30,140" end="20,140"/>
+        <wire start="120,140" end="180,140"/>
+        <wire start="220,140" end="280,140"/>
+        <wire start="280,140" end="280,160"/>
+        <wire start="280,200" end="280,220"/>
+        <wire start="-30,-90" end="20,-90"/>
+        <wire start="500,-80" end="500,-50"/>
+    </wires>
+    <paintings>
+        <painting name="rectangle" rectangle="0,0,450,160" pos="-100,110" transform="1,0,0,1,0,0">
+            <pen width="1" color="#808080" style="1"/>
+            <brush color="#000000" style="0"/>
+        </painting>
+        <painting name="rectangle" rectangle="0,0,450,170" pos="-100,-130" transform="1,0,0,1,0,0">
+            <pen width="1" color="#808080" style="1"/>
+            <brush color="#000000" style="0"/>
+        </painting>
+        <painting name="text" pos="-100,-160" transform="1,0,0,1,0,0">
+            <properties text="&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;&#10;&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;&#10;p, li { white-space: pre-wrap; }&#10;&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'Noto Sans'; font-size:10pt; font-weight:400; font-style:normal;&quot;&gt;&#10;&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;Villard circuit&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;"/>
+        </painting>
+        <painting name="text" pos="-100,80" transform="1,0,0,1,0,0">
+            <properties text="&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;&#10;&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;&#10;p, li { white-space: pre-wrap; }&#10;&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'Noto Sans'; font-size:10pt; font-weight:400; font-style:normal;&quot;&gt;&#10;&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;Greinacher circuit (half-wave voltage doubler)&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;"/>
+        </painting>
+    </paintings>
+</caneda>
