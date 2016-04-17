@@ -9,7 +9,7 @@ As an alternative you can download the whole repository to have as a reference.
 
 For details visit the project's homepage:
 
-http://caneda.github.io
+http://www.caneda.org
 
 License
 =======
