@@ -15,7 +15,7 @@
                 <property name="stop2" value="5" visible="true"/>
             </properties>
         </component>
-        <component name="Ammeter" library="Miscellaneous" pos="150,30" transform="0,-1,1,0,0,0">
+        <component name="Ammeter" library="Measurement" pos="150,30" transform="0,-1,1,0,0,0">
             <properties pos="40,-20">
                 <property name="label" value="Amp1" visible="true"/>
             </properties>
